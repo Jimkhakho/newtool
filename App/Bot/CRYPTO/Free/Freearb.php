@@ -1,7 +1,7 @@
 <?php
 const
-host = "https://tronths.com/",
-register_link = "https://tronths.com/ref/193822340816",
+host = "https://freearb.co/",
+register_link = "https://freearb.co/ref/193822331979",
 youtube = "https://youtube.com/@iewil";
 
 function h(){
@@ -33,7 +33,7 @@ Ban(1);
 cookie:
 Cetak("Register",register_link);
 print line();
-$user = simpan("Original_Wallet_Faucetpay");
+$user = simpan("Original_Wallet_ARB");
 ua();
 hapus('cookie.txt');
 
@@ -63,10 +63,10 @@ while(true){
 	}else{
 		print Error("Sorry not original wallet faucetpay\n");
 		print line();
-		hapus("Original_Wallet_Faucetpay");
+		hapus("Original_Wallet_ARB");
 		goto cookie;
 	}
-	if($bal > 0.0001) {
+	if($bal > 1.000) {
 		$cek=explode('&quot',explode('checksum&quot;:&quot;',$r)[3])[0];
 		$id=explode('"',explode('wire:effects="[]" wire:id="',$r)[3])[0];
 		$token=explode('"',explode('data-csrf="',$r)[1])[0];
